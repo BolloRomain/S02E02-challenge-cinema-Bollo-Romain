@@ -3,6 +3,7 @@
 ?>
 
 <main class="main-container">
+
 <section>
 
     <?php 
@@ -63,6 +64,35 @@ for ($indice = 0; $indice < 6; $indice ++) {
     ?>
 
     </ul>
+
+</section>
+
+<section>
+
+<?php 
+// [...]
+$rooms = [
+  'Athéna',
+  'Dyonisos',
+  'Hadès',
+  'Zeus'
+]; 
+
+?>
+
+<h2 class="page__title">Salles</h2>
+
+<ul>
+
+<?php 
+    for ($salles = 0; $salles <4; $salles ++){
+        ?>
+        <?php echo "<li>".$rooms[$salles]."</li>" ?> 
+    
+    <?php }
+    ?>
+    
+</ul>
 
 </section>
 </main>
